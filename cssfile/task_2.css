@@ -1,0 +1,175 @@
+body,ul,dl,form,p{
+    margin: 0;padding: 0;
+}
+body{
+    margin-top: -21px;
+}
+#wrapper{
+    width: 100%;
+}
+                                    /*  导航    导航      导航    导航      */
+#header{
+    width: 100%;
+    height: 60px;
+    background-color: #333333;
+    color: white;
+    line-height: 60px;
+    position: relative;
+}
+#header h1{
+    text-indent: 37px;
+}
+#header ul{
+    position: absolute;
+    right: 50px;
+    top: 0;
+}
+#header ul li{
+    float: left;
+    margin-left: 15px;
+    width: 80px;
+    color: black;
+}
+#header a{
+    display: inline-block;
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+}
+#header a:hover{
+    color: #A7A6A4;
+}
+
+#container{
+    width: 100%;
+    background-color: #DEDEDE;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#article_1,#article_2,#img_box,#article_3,#sidebar{                               /*第一篇文章     第一篇文章     第一篇文章 */
+    width: 1248px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    padding: 25px 20px;
+}
+#article_2,#img_box,#article_3,#sidebar{
+    margin-top: 20px;
+}
+h2.subTitle{
+    font-size: 16px;
+    color: #A7A6A4;
+}
+p.author{
+    font-size: 14px;
+    color: #A7A6A4;
+}
+p:not(.author){
+    text-indent: 28px;
+    line-height: 28px;
+}
+                                                                  /*另一篇文章   另一篇文章   另一篇文章  */
+#article_2 ul li{
+     list-style-type: none;
+ }
+#article_2 ul li,#article_3 ol li{
+    margin-top: 8px;
+}
+/*                                                       图片盒子   图片盒子   图片盒子 */
+#img_box dl{
+    margin-left: 50px;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    border: 1px solid #DEDEDE;
+    margin-top: 8px;
+    text-align: center;
+    padding: 10px;
+}
+#img_box dl dd img{
+    margin-left: -35px;
+    margin-top: 8px;
+}
+                                                                     /*最后一篇文章    最后一篇文章    最后一篇文章*/
+#article_3 p{
+    text-indent: 1px;
+}
+#article_3 table{
+    width: 1250px;
+    border-collapse: collapse;
+    text-indent: 5px;
+    font-weight: bold;
+    border-color: #A7A6A4;
+}
+#article_3 table td{
+   height: 20px;
+}
+#article_3 table thead{
+    background-color: black;
+    color: white;
+}
+#article_3 table tfoot{
+    background-color: #A7A6A4;
+}
+                                                           /*这以后将会是侧栏    这以后将会是侧栏   这以后将会是侧栏 */
+#sidebar h2{
+    font-size: 22px;
+    text-indent: 5px;
+    border-left: 3px solid #DEDEDE;
+}
+#sidebar form{
+    font-size: 14px;
+    font-weight: bold;
+    width: 1200px;
+    margin: 20px auto;
+}
+#sidebar div{
+    margin-top: 12px;
+    margin-left: 380px;
+}
+#sidebar textarea{
+    width: 400px;
+    height: 100px;
+    font-size: 20px;
+    margin-left: -25px;
+}
+#sidebar #password{
+    margin-left: 28px;
+}
+#sidebar p.tip{
+    color: #A7A6A4;
+    margin-left: 465px;
+}
+#sidebar p.title{
+    display: inline-block;
+    margin-right: 40px;
+}
+#sidebar p.txt{
+    position: relative;
+    top: -90px;
+    left: -20px;
+}
+#sidebar label{
+    margin-right: 8px;
+}
+#sidebar .btn{
+    width: 1200px;
+    height: 40px;
+    background-color: #3355D0;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+                                                                   /*版权    版权   版权  */
+#footer{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 60px;
+    font-size: 12px;
+    font-weight: bold;
+}
