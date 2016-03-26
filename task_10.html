@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox布局练习</title>
+    <style type="text/css">
+        body,div{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: space-between;
+
+            display: -webkit-flex;
+            -webkit-flex-flow: row wrap;
+            -webkit-align-items: center;
+            -webkit-justify-content: space-between;
+
+            display: -moz-flex;
+            -moz-flex-flow: row wrap;
+            -moz-align-items: center;
+            -moz-justify-content: space-between;
+
+            display: -ms-flex;
+            -ms-flex-flow: row wrap;
+            -ms-align-items: center;
+            -ms-justify-content: space-between;
+
+            padding: 20px;
+            border: 1px solid gray;
+        }
+        .box{
+            width: 150px;
+            border: 1px solid #f00;
+        }
+        .box_1{
+            height: 120px;
+        }
+        .box_2{
+            height: 100px;
+        }
+        .box_3{
+            height: 40px;
+        }
+        .box_4{
+            height: 200px;
+            border: 1px solid #0f0;
+        }
+        @media (max-width: 640px) {              /*当屏幕宽度小于等于640px时*/
+            .container{
+                align-items: flex-start;
+                -webkit-align-items: flex-start;
+                -moz-align-items:flex-start;
+                -ms-align-items:flex-start;
+            }
+            .box_4{
+                order: -1;
+                -webkit-order: -1;
+                -moz-order: -1;
+                -ms-order: -1;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="box box_1">150*120</div>
+    <div class="box box_2">150*100</div>
+    <div class="box box_3">150*40</div>
+    <div class="box box_4">150*200</div>
+</div>
+</body>
+</html>
